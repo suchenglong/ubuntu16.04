@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM dsoares/docker-ubuntu
 RUN pip install docx \
     && pip install web.py \
     && pip install jieba \
