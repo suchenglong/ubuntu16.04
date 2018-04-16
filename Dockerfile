@@ -1,12 +1,10 @@
-FROM dsoares/docker-ubuntu
-RUN apt-get install -f libxml2-dev \
-    && apt-get install -f libxslt-dev \
-    && pip install docx \
-    && pip install web.py \
-    && pip install jieba \
-    && pip install numpy \
-    && pip install scipy \
-    && pip install sklearn
+FROM ubuntu:16.04
+RUN wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz \
+    && tar -xvf Python-2.7.13.tgz
+    && cd Python-2.7.13
+    && ./configure
+    && make
+    && make install 
 
 
 
