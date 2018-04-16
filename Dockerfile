@@ -1,7 +1,7 @@
 FROM dsoares/docker-ubuntu
-RUN apk update \
-    apk install libxml2-dev \
-    apk install libxslt-dev \
+RUN apt update \
+    apt install libxml2-dev \
+    apt install libxslt-dev \
     && pip install docx \
     && pip install web.py \
     && pip install jieba \
