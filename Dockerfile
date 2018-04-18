@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
-RUN apt-get -y install curl wget git openssh-server
+
 RUN apt-get update \
-    && apt-get -y install \
+    && apt-get -y install curl wget git 
+    
+RUN apt-get -y install \
     make \
     python2.7 \
     python-pip \
