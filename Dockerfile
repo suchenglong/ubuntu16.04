@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-RUN apt-get -y curl wget git openssh-server
+RUN apt-get -y install curl wget git openssh-server
 RUN apt-get update \
     && apt-get -y install \
     make \
