@@ -1,10 +1,13 @@
 FROM ubuntu:16.04
-RUN wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz \
-    && tar -xvf Python-2.7.13.tgz \
-    && cd Python-2.7.13 \
-    && ./configure \
-    && make \
-    && make install \
+RUN apt-get update \
+    && apt-get -y install \
+    make \
+    python2.7 \
+    python-pip \
+    python-dev \
+    python3.5 \
+    python3-pip \
+    python3.5-dev 
 
 
 
