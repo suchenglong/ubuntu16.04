@@ -8,8 +8,6 @@ ENV LANG zh_CN.UTF-8
 ENV LANGUAGE zh_CN:zh
 ENV TZ Asia/Shanghai
 RUN echo "alias ls='ls --color=auto'" >> /root/.bashrc
-
-RUN locale-gen en_US.UTF-8
     
 RUN apt-get -y install \
     make \
